@@ -1,10 +1,9 @@
-
 import React from 'react'
 
-export default function Selection() {
+export default function Selection(props) {
   return (
     <div>
-      <button className='fix-box'></button>
+       <div style={props.applyColor} className="fix-box">{props.key}</div>
     </div>
   )
 }
