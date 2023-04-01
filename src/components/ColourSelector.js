@@ -1,12 +1,11 @@
-
 import React from 'react';
 
 const ColourSelector = (props) => {
   const { config, selectNextBackground } = props
-  const { background } = config;
+  const { background } = config.background;
   return (
-    <button className={fix-box} onClick={() => selectNextBackground({background: background})}>
-      {label}
+    <button className={props.config.classname} onClick={() => selectNextBackground({background: background})}>
+      {props.config.label}
     </button>
   )
 }
